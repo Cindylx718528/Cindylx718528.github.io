@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+       div{
+           height: 100px;
+           background-color: pink;
+       }
+       
+       #first{
+           width: 200px;
+/*           margin can be negative*/
+           margin-left: 50px;
+/*           plus - can change right path*/
+           margin-top: 50px;
+           margin-right: 500000px; 
+           margin-bottom: 50px;
+           
+           padding:50px;
+       }
+    </style>
+</head>
+<body>
+   <li>when set width, margin-right no effects</li>
+   <li>when not set widt, margin-right decrease the width of element</li>
+    <div id="first"></div>
+    <div id="second"></div> 
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>payment information</title>
+    <style>
+        form{
+           margin: 0 auto; 
+            width:200px;
+        }
+        .na{
+           display: inline-block;
+        }
+        .nam{
+            padding-right:100px;
+            height: 25px;
+            color: lightgrey;
+            font-size: 11px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-left: 70px;
+        }
+        .em{
+            display: inline-block;
+        }
+        .ema{
+            padding-right:100px;
+            height: 25px;
+            color: lightgrey;
+            font-size: 11px;
+            font-weight: bold;
+            margin-bottom: 10px;
+             margin-left: 70px;
+        }
+         .ph{
+            display: inline-block;
+        }
+        .pho{
+            padding-right:100px;
+            height: 25px;
+            color: lightgrey;
+            font-size: 11px;
+            font-weight: bold;
+             margin-left: 70px;
+        }
+        .ci{
+            display: inline-block;
+        }
+        .cit {
+			border: solid 1px lightgrey;
+			padding: 6px 178px 6px 4px;
+			border-radius: 10px;
+			color: black;
+			margin-left: 5px;
+            margin-top: 10px;
+             margin-left:75px;
+            margin-bottom: 10px;
+		}
+		.pay{
+            display: inline-block;
+        }
+        .sub {
+			border: solid dodgerblue;
+            background-color: dodgerblue;
+			padding:6px 40px 6px 40px;
+			border-radius: 10px;
+			color: white;
+            margin-left:1140px;
+            margin-top: 10px;
+		}
+        .tex{
+            margin-top:20px;
+        }
+    </style>
+</head>
+<body>
+   <form action="form">
+    <fieldset id="">
+        <legend>Pay Information</legend>
+        <label for="na">Name </label>
+			<input class="nam" placeholder="Please enter your full name">
+			<br>
+		<label for="em">Email</label>	
+   <input class="ema" placeholder="Please enter your email">
+   <br>
+   <label for="ph">Phone</label>	
+   <input class="pho" placeholder="Please enter your phone number">
+   <br>
+   <label for="ci">City:</label>
+           <select name="" class="cit">
+				<option value="toronto">Toronto</option>
+				<option value="ottawa">Ottawa</option>
+				<option value="ontarial">Ontarial</option>
+			</select>
+			<br>
+			<div class="pay">Payment options:</div>
+			<input type="radio" name='food'>
+                <label for="">Master card</label>
+                <input type="radio" name='food'>
+                <label for="">Visa card</label>
+                <input type="radio" name='food'>
+                <label for="">Paypal</label>
+    </fieldset>  
+           </form>
+            <textarea class="tex"name="ta" cols="170" rows="12" placeholder="Please leave your comments"></textarea>
+<button class='sub'>Submit</button>
+</body>
+</html>

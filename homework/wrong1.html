@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            height: 2000px;
+        }
+        .container{
+            width: 400px;
+            height: 200px;
+            border: solid 1px pink;
+            
+            background-image:url("http://img1.3lian.com/gif/more/11/2012/03/f01e619a06370fed7d00c14e77d0c79e.jpg");
+            background-repeat: no-repeat;
+             
+            overflow: auto;
+        }
+        
+        .scroll{
+            background-attachment: scroll;
+        }
+        
+        .local{
+            background-attachment: local;
+        }
+        .expand{
+            height: 300px;   
+        }
+        .fixed{
+            background-attachment: fixed;
+            background-position: 10px 0px;
+        }
+    </style>
+</head>
+<body>
+   <h3>Scroll</h3>
+    <div class="container scroll">
+    <div class="expand"></div>
+    </div>
+    
+    <h3>Local</h3>
+    <div class="container local">
+        <div class="expand"></div>
+    </div>
+    
+    <h3>Fixed</h3>
+    <div class="container fixed">
+        <div class="expand"></div>
+    </div>
+</body>
+</html>

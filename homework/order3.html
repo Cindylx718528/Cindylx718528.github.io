@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Output</title>
+    <style>
+        body {
+            background-color: floralwhite;
+            color: dodgerblue;
+        }
+        
+        img {
+            width: 10%;
+        }
+        
+        #myinfo input {
+            width: 195px;
+        }
+        
+        #checkboxgroup input {
+            width: 20px;
+        }
+        
+        #radiogroup input {
+            width: 20px;
+        }
+        
+        #sure input {
+            width: 200px;
+            height: 50px;
+        }
+        
+        body {
+            margin: 0 auto;
+            width: 80%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Candy world</h1>
+    </center>
+    <form action="">
+        <fieldset id="myinfo">
+            <legend>My information</legend>
+            <br>
+            <select name="" id="">
+				<option value="Mr.">Mr.</option>
+				<option value="Mrs.">Mrs.</option>
+				<option value="Miss">Other.</option>
+			</select>
+            <br>
+            <br>
+            <label for="name">Name:</label>&nbsp;&nbsp;&nbsp;
+            <input id="name" type="name" placeholder="Please enter your full name" required>
+            <br>
+            <br>
+            <label for="email">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input id="email" type="email" placeholder="Please enter your email" required>
+            <br>
+            <br>
+            <label for="phone">Phone:</label>&nbsp;&nbsp;&nbsp;
+            <input id="phone" type="phone number" placeholder="Please enter your phone number" required>
+            <br>
+            <br>
+            <label for="address">Address:</label>
+            <input type="address" placeholder="Please enter your right address" required>
+            <br>
+            <br> City:&nbsp;&nbsp;
+            <select name="" id="">
+				<option value="toronto">Toronto</option>
+				<option value="vancouver">Vancouver</option>
+				<option value="ottawa">Ottawa</option>
+				<option value="montreal">Montreal</option>
+				<option value="calgary">Calgary</option>
+			</select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Order-1</legend>
+            <input type="checkbox" name="food">&nbsp;&nbsp;&nbsp;
+            <label for="">Candy</label>
+            <picture>
+                <img src="https://images6.alphacoders.com/421/421426.jpg">
+            </picture>&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="food">&nbsp;&nbsp;&nbsp;
+            <label for="">Cake</label>
+            <picture>
+                <img src="http://leloupcake.com/index_files/cake-images-21.jpg">
+            </picture>&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="food">&nbsp;&nbsp;&nbsp;
+            <label for="">Lollipop</label>
+            <picture>
+                <img src="https://photo.s3.com.tw/pdImg/15100070/15100070-01.jpg">
+            </picture>&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="food">&nbsp;&nbsp;&nbsp;
+            <label for="">Chocolate</label>
+            <picture>
+                <img src="http://farm3.static.flickr.com/2546/5810357505_d4c1bbf78c_o.jpg">
+            </picture>
+            <br><br> Tastes:
+            <br>
+            <br>
+            <div id="checkboxgroup">
+                <input type="checkbox" name='tastes' checked>
+                <label for="">Sugar free</label>
+                <br>
+                <input type="checkbox" name='tastes'>
+                <label for="">Sweet</label>
+                <br>
+                <input type="checkbox" name='tastes'>
+                <label for="">Sweet-Spicy</label>
+                <br>
+                <input type="checkbox" name='tastes'>
+                <label for="">Sour-sweet</label>
+                <br>
+                <input type="checkbox" name='tastes'>
+                <label for="">Abnormal-sweet</label>
+            </div>
+            <br><br> People(1-8)
+            <br><br>
+            <input min=1 max=8 type="range" onchange="updateTextInput(this.value)">&nbsp;&nbsp;
+            <input type="text" id="rangeValue">
+            <br>
+            <br>
+            <label for="date">Date:</label>&nbsp;
+            <input id="date" type="date" placeholder="yyyy-mm-dd">
+            <br>
+            <br>
+            <label for="time">Time:</label>
+            <input id="time" type="time" placeholder="--:-- --">
+            <br><br> Mode of payment
+            <br><br>
+            <div id="radiogroup">
+                <input type="radio" name='food' checked>
+                <label for="">Master card</label>
+                <br>
+                <input type="radio" name='food'>
+                <label for="">Visa card</label>
+                <br>
+                <input type="radio" name='food'>
+                <label for="">Paypal</label>
+                <br>
+                <input type="radio" name='food'>
+                <label for="">Cash payments</label>
+            </div>
+            <br>
+            <textarea name="ta" cols="100" rows="12" placeholder="Please leave your comments"></textarea>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Order-2</legend>
+            Multiple package:
+            <br><br>
+            <input type="checkbox" name="food">&nbsp;&nbsp;&nbsp;
+            <label for="">Wedding party</label>
+            <picture>
+                <img src="https://si.geilicdn.com/vshop431707-1486558643936-C5B6C-s1.jpg?w=750&h=750&cp=1">
+            </picture>&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="food">&nbsp;&nbsp;&nbsp;
+            <label for="">Baby party</label>
+            <picture>
+                <img src="https://p0.meituan.net/wedding/fba485c60ba860fc648bf5214fc7795a309307.jpg%40640w_480h_0e_1l%7Cwatermark%3D0">
+            </picture>&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="food">&nbsp;&nbsp;&nbsp;
+            <label for="">Girl party</label>
+            <picture>
+                <img src="https://image.japaholic.com/article/images/2017/01/1125.jpg">
+            </picture>&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="food">&nbsp;&nbsp;&nbsp;
+            <label for="">Boy party</label>
+            <picture>
+                <img src="http://g-search3.alicdn.com/bao/uploaded/i2/TB1Y4O9KpXXXXbFXFXXYXGcGpXX_M2.SS2">
+            </picture>&nbsp;&nbsp;&nbsp;
+            <br><br>
+            <label for="">People:</label>
+            <input type="number" min=11 max=500>
+            <br><br>
+            <label for="date">Date:</label>&nbsp;
+            <input id="date" type="date" placeholder="yyyy-mm-dd">
+            <br>
+            <br>
+            <label for="time">Time:</label>
+            <input id="time" type="time" placeholder="--:-- --">
+            <br><br> Mode of payment
+            <br><br>
+            <div id="radiogroup">
+                <input type="radio" name='food' checked>
+                <label for="">Master card</label>
+                <br>
+                <input type="radio" name='food'>
+                <label for="">Visa card</label>
+                <br>
+                <input type="radio" name='food'>
+                <label for="">Paypal</label>
+                <br>
+                <input type="radio" name='food'>
+                <label for="">Cash payments</label>
+            </div>
+            <br>
+            <textarea name="ta" cols="100" rows="12" placeholder="Please leave your comments"></textarea>
+        </fieldset>
+        <br><br> Service quality:
+        <br><br>
+        <div id="radiogroup">
+            <input type="radio" name='service quality' checked>
+            <label for="">Excellent</label>
+            <input type="radio" name='service quality'>
+            <label for="">Good</label>
+            <input type="radio" name='service quality'>
+            <label for="">Soso</label>
+            <input type="radio" name='service quality'>
+            <label for="">Bad</label>
+        </div>
+        <br>
+        <textarea name="ta" cols="100" rows="12" placeholder="Please leave your suggest"></textarea>
+        <br>
+        <center id="sure">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </center>
+        <button type=submit>Submet</button>
+        <center>
+            <h3>If you have any question, please call our phone:123-456-789</h3>
+        </center>
+    </form>
+    <script>
+        function updateTextInput(val) {
+            document.getElementById('rangeValue').value = val;
+        }
+
+    </script>
+</body>
+
+</html>
